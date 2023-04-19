@@ -3,34 +3,17 @@ package ru.mirea.khadzhioglo.musicplayer;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.Service;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.res.Resources;
 import android.media.MediaPlayer;
-import android.net.Uri;
-import android.os.Bundle;
-import android.os.Handler;
 import android.os.IBinder;
-import android.os.Looper;
-import android.os.Message;
-import android.util.Log;
+
 
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import java.security.Provider;
-
 public class PlayerService extends Service {
     private MediaPlayer mediaPlayer;
-    public Handler mHandler;
-    private Handler mainHandler;
     public static final String CHANNEL_ID = "ForegroundServiceChannel";
-
-    public Handler MyLooper(Handler mainThreadHandler) {
-        return mainHandler =mainThreadHandler;
-    }
 
     @Override
     public IBinder onBind(Intent intent) {

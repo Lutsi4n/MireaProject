@@ -1,28 +1,12 @@
 package ru.mirea.khadzhioglo.musicplayer;
 
-import static android.Manifest.permission.FOREGROUND_SERVICE;
-import static android.Manifest.permission.POST_NOTIFICATIONS;
-
-import android.app.Service;
-import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.res.Resources;
-import android.graphics.drawable.Icon;
 import android.os.Bundle;
-import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-
-import android.os.Handler;
-import android.os.Looper;
-import android.os.Message;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import java.security.Provider;
 
 import ru.mirea.khadzhioglo.musicplayer.databinding.FragmentMusicBinding;
 
@@ -37,8 +21,6 @@ public class Music extends Fragment {
     private FragmentMusicBinding binding;
 
     private boolean play = false;
-
-    private int PermissionCode = 200;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
