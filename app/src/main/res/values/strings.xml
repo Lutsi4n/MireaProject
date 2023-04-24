@@ -11,4 +11,7 @@
     <string name="menu_gallery">Information</string>
     <string name="menu_slideshow">Browser</string>
     <string name="menu_music">Music</string>
+    <string name="menu_sensor">Sensor</string>
+    <string name="menu_camera">Camera</string>
+    <string name="menu_record">Record</string>
 </resources>
