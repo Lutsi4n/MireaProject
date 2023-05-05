@@ -14,4 +14,6 @@
     <string name="menu_sensor">Sensor</string>
     <string name="menu_camera">Camera</string>
     <string name="menu_record">Record</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_files">Files</string>
 </resources>
